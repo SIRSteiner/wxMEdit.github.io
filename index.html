@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- vim: set sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script type="text/javascript">
+      if (location.search in {'?zh_CN':0, '?zh_SG':0, '?zh':0})
+        location = 'zh_CN'+location.pathname+location.hash;
+      else if (location.search)
+        location = location.pathname+location.hash;
+    </script>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel='stylesheet' type='text/css' href='stylesheets/architectsdaughter.css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5.js"></script>
+    <![endif]-->
+
+    <title>wxMEdit - A Cross-platform Text/Hex Editor</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>wxMEdit</h1>
+        <h2>A Cross-platform Text/Hex Editor</h2>
+        <a href="https://github.com/hltj" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <aside id="sidebar">
+          <h2><a>Home</a></h2>
+          <h2><a href="downloads.html">Downloads</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/wiki">Wiki</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit">Code</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/issues">Support</a></h2>
+        </aside>
+
+        <section id="main-content">
+          <p><strong><a href="zh_CN/">简体中文</a></strong></p>
+
+<h2>
+<a name="wxmedit" class="anchor" href="#wxmedit"><span class="octicon octicon-link"></span></a>wxMEdit</h2>
+
+<ul>
+<li>wxMEdit is a cross-platform Text/Hex Editor written in C++ &amp; wxWidgets.</li>
+<li>wxMEdit is an improved version of <a href="http://sourceforge.net/projects/madedit/">MadEdit</a> which has been discontinued.</li>
+<li>wxMEdit can edit files in Text/Column/Hex modes, and supports many useful functions, e.g. Bookmark, SyntaxHighlightings, WordWrap, Encodings (UTF8/16/32, ISO-8859-x, CP125x, KOI8, GB18030, Big5, ...), WordCount and Updates checking. </li>
+<li>The purpose of this project is to provide a continually maintained text/hex editor with bug fixes, improvements and refactor.</li>
+</ul><h2>
+<a name="mainly-changes-from-madedit-029" class="anchor" href="#mainly-changes-from-madedit-029"><span class="octicon octicon-link"></span></a>Mainly Changes from MadEdit 0.2.9</h2>
+
+<ul>
+<li>Added automatically checking for updates.</li>
+<li>Added bookmark support.</li>
+<li>Added purging histories support.</li>
+<li>Added selecting a line by triple click.</li>
+<li>Added FreeBASIC syntax file.</li>
+<li>Improved encoding support.
+
+<ul>
+<li>Added new encodings: ISO-8859-16, Windows-1258, CP850, CP852, CP855, CP866, KOI8-R, KOI8-U, GB18030, CP437 Variant for ASCII-Art.</li>
+<li>Added grouping of encodings.</li>
+</ul>
+</li>
+<li>Improved Mac OS X support.</li>
+<li>Improved system integration under Windows.</li>
+<li>Improved encoding detection result.</li>
+<li>Redesigned dialogs with Code::Blocks wxSmith.</li>
+<li>Updated translations.
+
+<ul>
+<li>Added Spanish translation.</li>
+<li>Added Russian translation.</li>
+<li>Updated Simplified Chinese, Traditional Chinese and Japanese translations.</li>
+</ul>
+</li>
+<li>Fixed many crashes and other bugs.</li>
+<li>Improved build and packaging configurations.</li>
+</ul><p>See <a href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">ChangeLog</a> for more changes.</p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>wxMEdit can run under MS-Windows, Linux, FreeBSD and Mac OS X platforms.</li>
+<li>Checks for updates automatically.</li>
+<li>Supports bookmark.</li>
+<li>Edits files in Text, Column and Hex modes.</li>
+<li>In Hex-Mode, wxMEdit can open large files which size is up to 32GB (INT_MAX*16).</li>
+<li>Users can change the encoding of files at runtime like Web-Browsers.</li>
+<li>Supports many encodings, e.g. Unicode (UTF-8, UTF-16/32 with Little or Big Endian), ISO-8859-1~16, Windows-1250~1258, KOI8-R/U, GB18030, Big5 and Windows-31J etc.</li>
+<li>Supports non-BMP Unicode Characters Such as CJK Ext-B/C/D, Miao Letters, Mathematical Alphanumeric Symbols, Musical Symbols, Emoji, etc.</li>
+<li>If users input a character that is not supported by current encoding, this character will be converted to Unicode escape format (only code point format supported currently).</li>
+<li>Regular Expression search &amp; replace.</li>
+<li>Opens multiple files on single instance.</li>
+<li>Supports syntax-highlighting of many programming languages, e.g. awk, C/C++, CSS, diff/patch, D, DOS Batch Script, Flash ActionScript, HTML, Java, JavaScript, JSP, Lua, Pascal, PHP, Perl, Python, Ruby, UNIX Shell Script, x86 Assembly, XML, Fortran, TeX/LaTeX, Squirrel, C#, Visual Basic, ASP(VBScript), SQL, Verilog, VHDL, FreeBASIC.</li>
+<li>wxMEdit can view ASCII-Art files with appropriate monospace font e.g. Courier New under Windows/Mac OS X; Andale Mono, Courier, Menlo, Monaco under Mac OS X; Console and Fixed under Unix-like OS; DejaVu Sans Mono, Free Mono, Liberation Mono, etc.</li>
+</ul>
+        <div id="footer"><p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a> with modification.</p></div>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53914281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
