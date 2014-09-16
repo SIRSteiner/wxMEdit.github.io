@@ -4,12 +4,17 @@
   <head>
     <meta charset="utf-8" />
     <script type="text/javascript">
-      if (location.search in {'?zh_CN':0, '?zh_SG':0})
-        location = 'zh_CN'+location.pathname+location.hash;
-      else if (location.search)
-        location = location.pathname+location.hash;
-      else
+      if (location.search) {
+        var s = location.search;
+        if (s.match(/^\?es_[A-Z][A-Z]/))
+          s = '?es';
+        var l10n = {'?zh_CN':'zh_CN', '?zh_SG':'zh_CN', '?zh':'zh_CN', '?zh_TW':'', 
+                    '?zh_HK':'', '?zh_MO':'', '?ja_JP':'ja_JP', '?ja':'ja_JP', '?es':'', }[s] || '';
+        location = l10n + "/downloads.html#prerelease";
+      }
+      else {
         location = "downloads.html#prerelease";
+      }
     </script>  
     <meta http-equiv="refresh" content="0; url=downloads.html#prerelease" />
     <title>wxMEdit -  A Cross-platform Text/Hex Editor</title>

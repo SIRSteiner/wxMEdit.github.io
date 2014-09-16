@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- vim: set sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel='stylesheet' type='text/css' href='../stylesheets/architectsdaughter.css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="../javascripts/html5.js"></script>
+    <![endif]-->
+
+    <title>wxMEdit - クロスプラットフォームのテキスト/Hex エディタ</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="inner">
+        <h1>wxMEdit</h1>
+        <h2>クロスプラットフォームのテキスト/Hex エディタ</h2>
+        <a href="https://github.com/hltj" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <aside id="sidebar">
+          <h2><a>ホーム</a></h2>
+          <h2><a href="downloads.html">ダウンロード</a></h2>
+          <h2><a href="credits.html">クレジット</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/wiki/Home_ja_JP">Wiki</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit">コード</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/issues">サポート</a></h2>
+        </aside>
+
+        <section id="main-content">
+          <p><strong>
+            <a href="../zh_CN/">简体中文</a> 
+            <a href="../"      >English</a> 
+          </strong></p>
+
+<h2>
+<a name="wxmedit" class="anchor" href="#wxmedit"><span class="octicon octicon-link"></span></a>wxMEdit</h2>
+
+<ul>
+<li>wxMEdit は C++ &amp; wxWidgets によって開発されたクロスプラットフォーム対応の テキスト/バイナリエディタ です 。</li>
+<li>wxMEdit は 現在開発が停止している <a href="http://sourceforge.net/projects/madedit/">MadEdit</a> の改良版です。</li>
+<li>wxMEdit は テキスト/列/16進モードでファイルを編集でき、更に多くの便利な機能を備えています。 例: ブックマーク, 構文定義による強調, 多くのエンコーディング, 折り返し, 単語数のカウント, アップデートの確認等々 </li>
+<li>wxMEdit は 一般的な殆どのエンコーディング (UTF8/16/32, ISO-8859-x, CP125x, KOI8, GB18030, Big5, ...) に対応しています。 (*テキスト/列モードのみ、または16進モードのみではありません)</li>
+<li>このプロジェクトは、継続的なバグ修正、改良、リファクタリングが維持された テキスト/バイナリエディタ を提供することを主要な目的としています。</li>
+</ul><h2>
+<a name="madedit-029-%E3%81%8B%E3%82%89%E3%81%AE%E4%B8%BB%E8%A6%81%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9" class="anchor" href="#madedit-029-%E3%81%8B%E3%82%89%E3%81%AE%E4%B8%BB%E8%A6%81%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9"><span class="octicon octicon-link"></span></a>MadEdit 0.2.9 からの主要な変更点</h2>
+
+<ul>
+<li>追加 - アップデートの自動確認</li>
+<li>追加 - ブックマークに対応</li>
+<li>追加 - 履歴の削除に対応</li>
+<li>追加 - トリプルクリックによる行選択</li>
+<li>追加 - FreeBASIC 構文定義ファイル</li>
+<li>追加 - Windows の %APPDATA% ディレクトリに構成設定ファイルを配置するオプション</li>
+<li>改良 - "検索 / 置換" の対応</li>
+<li>改良 - Mac OS X への対応</li>
+<li>改良 - Windows のシステム統合</li>
+<li>改良 - エンコーディングの検出機能</li>
+<li>改良 - 16 進編集の対応
+
+<ul>
+<li>16進領域へ コピー/貼り付け を行う際のデータ書式に関する選択肢を追加</li>
+<li>新たに追加された機能: 16進領域への上書き貼り付け</li>
+</ul>
+</li>
+<li>エンコーディングの対応を改良
+
+<ul>
+<li>エンコーディングのグループ化を追加</li>
+<li>追加されたエンコーディング: ISO-8859-16, Windows-1258, KOI8-R, KOI8-U, GB18030, CP850, CP852, CP855, CP866, CP437 Variant for ASCII-Art.</li>
+</ul>
+</li>
+<li>Code::Blocks wxSmith でダイアログを再設計</li>
+<li>翻訳を更新
+
+<ul>
+<li>追加 - スペイン語</li>
+<li>追加 - ロシア語 </li>
+<li>更新 - 簡体字中国語, 繁体字中国語 および日本語.</li>
+</ul>
+</li>
+<li>多くのクラッシュ、その他バグを修正</li>
+<li>ビルド、およびパッケージングの構成を改良</li>
+</ul><p>更に詳細な情報は <a href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">更新履歴</a> をご覧ください。</p>
+
+<h2>
+<a name="%E6%A9%9F%E8%83%BD" class="anchor" href="#%E6%A9%9F%E8%83%BD"><span class="octicon octicon-link"></span></a>機能</h2>
+
+<ul>
+<li>wxMEdit は MS-Windows, Linux, FreeBSD および Mac OS X プラットフォームの元で動作します。</li>
+<li>アップデートの自動確認.</li>
+<li>ブックマークに対応.</li>
+<li>テキスト, 列、および 16 進表示モードでのファイル編集</li>
+<li>最大 32GB (INT_MAX*16) 迄の巨大なファイルを開くことが可能(16進モード)</li>
+<li>ウェブブラウザのように、実行中にファイルのエンコーディングを変更可能</li>
+<li>多数のエンコーディングに対応 :
+
+<ul>
+<li>Unicode (UTF-8, UTF-16/32 リトルエンディアン、ビッグエンディアン);</li>
+<li>ISO-8859-1~16, Windows-1250~1258;</li>
+<li>KOI8-R/U;</li>
+<li>MS936(GBK*), GB18030, MS950(Big5*), Windows-31J(Shift-JIS*);</li>
+<li>その他.</li>
+</ul>
+</li>
+<li>non-BMP Unicode 文字 (CJK 統合漢字拡張-B/C/D ポラード文字, 数学用英数字記号, 音楽記号, 絵文字 その他) に対応</li>
+<li>現在のエンコーディングで対応していない文字が入力された時、Unicode エスケープ文字で表示 (現在はコードポイントのみ対応)</li>
+<li>正規表現による検索 &amp; 置換</li>
+<li>シングルインスタンスで複数のファイルをオープン可能</li>
+<li>各種プログラム言語別の構文強調(シンタックス ハイライト)表示に対応:
+
+<ul>
+<li>awk, C/C++, CSS, diff/patch, D, DOS Batch Script, Flash ActionScript, HTML, Java, JavaScript, JSP, Lua, Pascal, PHP, Perl, Python, Ruby, UNIX Shell Script, x86 Assembly, XML, Fortran, TeX/LaTeX, Squirrel, C#, Visual Basic, ASP(VBScript), SQL, Verilog, VHDL, FreeBASIC.</li>
+</ul>
+</li>
+<li>wxMEdit では、アスキーアートファイルを適切な等幅フォントで表示できます。 例 :
+
+<ul>
+<li>Windows/Mac OS X で Courier New;</li>
+<li>Mac OS X で Andale Mono, Courier, Menlo, Monaco;</li>
+<li>Unix 系 OS で Console と Fixed; </li>
+<li>DejaVu Sans Mono, Free Mono, Liberation Mono, その他.</li>
+</ul>
+</li>
+</ul>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53914281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

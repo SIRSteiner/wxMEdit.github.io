@@ -5,10 +5,14 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <script type="text/javascript">
-      if (location.search in {'?zh_CN':0, '?zh_SG':0, '?zh':0})
-        location = 'zh_CN'+location.pathname+location.hash;
-      else if (location.search)
-        location = location.pathname+location.hash;
+      if (location.search) {
+        var s = location.search;
+        if (s.match(/^\?es_[A-Z][A-Z]/))
+          s = '?es';
+        var l10n = {'?zh_CN':'zh_CN', '?zh_SG':'zh_CN', '?zh':'zh_CN', '?zh_TW':'', 
+                    '?zh_HK':'', '?zh_MO':'', '?ja_JP':'ja_JP', '?ja':'ja_JP', '?es':'', }[s] || '';
+        location = l10n + location.pathname + location.hash;
+      }
     </script>  
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel='stylesheet' type='text/css' href='stylesheets/architectsdaughter.css'>
@@ -44,7 +48,10 @@
         </aside>
 
         <section id="main-content">
-          <p><strong><a href="zh_CN/">简体中文</a></strong></p>
+          <p><strong>
+            <a href="zh_CN/">简体中文</a> 
+            <a href="ja_JP/">日本語</a> 
+          </strong></p>
 
 <h2>
 <a name="wxmedit" class="anchor" href="#wxmedit"><span class="octicon octicon-link"></span></a>wxMEdit</h2>
