@@ -46,6 +46,7 @@
             <a href="../ja_JP/downloads.html">日本語</a> 
           </strong></p>
 
+<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>预发布版</h2>
 
@@ -79,10 +80,12 @@
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.7.2/wxMEdit-2.9.7.2.tar.gz">wxMEdit-2.9.7.2.tar.gz</a></td>
 </tr>
 </tbody>
-</table><h2>
+</table>
+-->
+<h2>
 <a name="%E6%9C%80%E6%96%B0%E5%8F%91%E5%B8%83%E7%89%88" class="anchor" href="#%E6%9C%80%E6%96%B0%E5%8F%91%E5%B8%83%E7%89%88"><span class="octicon octicon-link"></span></a>最新发布版</h2>
 
-<p><strong>当前版本：2.9.7。</strong></p>
+<p><strong>当前版本：2.9.8。</strong></p>
 
 <table>
 <thead><tr>
@@ -94,8 +97,29 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7-win32-bin.7z">wxMEdit-2.9.7-win32-bin.7z</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8-win32-bin.7z">wxMEdit-2.9.8-win32-bin.7z</a></td>
 </tr>
+<tr>
+<td>Archlinux/Gentoo</td>
+<td>any</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>Debian/Ubuntu</td>
+<td>i386/amd64/mipsel</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>CentOS/Fedora</td>
+<td>i386/amd64</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>FreeBSD</td>
+<td>i386/amd64</td>
+<td>(coming soon)</td>
+</tr>
+<!--
 <tr>
 <td>Archlinux</td>
 <td>any</td>
@@ -223,18 +247,20 @@
 <td>amd64</td>
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxmedit-2.9.7-amd64-icu52.txz">wxmedit-2.9.7-amd64-icu52.txz</a></td>
 </tr>
+-->
 <tr>
 <td>Mac OS X</td>
 <td>i386/amd64</td>
 <td>
-<a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7_OSXFix.tar.gz">wxMEdit-2.9.7_OSXFix.tar.gz</a> 并参见<a href="https://github.com/hltj/wxMEdit/issues/57">这里</a>安装</td>
+<a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a> 并参见<a href="https://github.com/hltj/wxMEdit/issues/57">这里</a>安装</td>
 </tr>
 <tr>
 <td>Other</td>
 <td>any</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7.tar.gz">wxMEdit-2.9.7.tar.gz</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a></td>
 </tr>
 </tbody>
+<!--
 </table><p>用于 RHEL 5 / CentOS 5 的 wxMEdit 依赖于 libicu-4.2.1 和 libicu-devel-4.2.1。可以用 Remi RPM 包：</p>
 
 <table>
@@ -265,19 +291,31 @@
 <td><a href="ftp://ftp.pbone.net/mirror/rpms.famillecollet.com/enterprise/5/php55/x86_64/libicu-devel-4.2.1-9.1.el5.remi.x86_64.rpm">libicu-devel-4.2.1-9.1.el5.remi.x86_64.rpm</a></td>
 </tr>
 </tbody>
+-->
 </table><h2>
 <a name="%E6%94%B9%E5%8A%A8%E8%AE%B0%E5%BD%95" class="anchor" href="#%E6%94%B9%E5%8A%A8%E8%AE%B0%E5%BD%95"><span class="octicon octicon-link"></span></a>改动记录</h2>
 
 <h3>
-<a name="2972" class="anchor" href="#2972"><span class="octicon octicon-link"></span></a>2.9.7.2</h3>
+<a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
 <ol>
-<li>手动更新检测像自动更新一样的异步进行。</li>
-<li>增大窗口默认大小。</li>
-<li>十六进制编辑区域编辑时，添加是否粘贴为十六进制串的更多选择。</li>
-<li>添加新功能：在十六进制编辑区域覆盖粘贴。</li>
+<li> 添加是否在十六进制编辑区域粘贴为十六进制串的更多选择。</li>
+<li> 添加新功能：在十六进制编辑区域覆盖粘贴。</li>
+<li> 添加更多常用编码别名并在编码转换对话框中显示。</li>
+<li> 打开主页或下载页时，添加本地化支持。</li>
+<li> 添加 zh_HK、zh_MO、zh_SG 和 zh 中文翻译支持。</li>
+<li> 添加将 Windows 下配置文件放在 %APPDATA% 目录中的选项。</li>
+<li> 增大窗口默认大小。</li>
+<li> 手动更新检测像自动更新一样的异步进行。</li>
+<li> 改进编码分组。</li>
+<li>修正 clang-analyzer 检测到的问题。</li>
+<li>修正 Windows 下调试结束时的内存泄露警告。</li>
 <li>更新 FreeBSD 打包配置，采用 ports 方式，切换到 pkgng。</li>
-<li>更新简繁中文翻译。</li>
+<li>更新简体中文翻译。</li>
+<li>更新繁体中文翻译（Vincent_TW）。</li>
+<li>更新西班牙文翻译（Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;）。</li>
+<li>更新日文翻译（Tilt &lt;tiltstr[at]gmail.com&gt;）。</li>
+<li>更新俄文翻译（Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;）。</li>
 <li>其他小修改及问题修正。</li>
 </ol><h3>
 <a name="297" class="anchor" href="#297"><span class="octicon octicon-link"></span></a>2.9.7</h3>
@@ -285,25 +323,25 @@
 <ol>
 <li> 添加新编码“用于 ASCII 艺术的 CP437 变体”以更好支持 ASCII 艺术。</li>
 <li> 添加自动更新检测功能。</li>
-<li> 添加书签功能［主要由 Gospodin Gyurov（即 Gogo） <a href="mailto:ggurov@yahoo.com">ggurov@yahoo.com</a> 开发］。</li>
+<li> 添加书签功能［主要由 Gospodin Gyurov（即 Gogo） &lt;ggurov[at]yahoo.com&gt; 开发］。</li>
 <li> 添加新命令：删除前一词/后一词（由 Gogo开发）。</li>
 <li> 添加搜索选项“循环查找”。</li>
 <li> 关于对话框添加致谢标签。</li>
 <li> 选项对话框添加杂项标签。</li>
-<li> 添加三击选择一行功能（主要由 cfreeer <a href="mailto:cfreeer@users.sf.net">cfreeer@users.sf.net</a> 开发）。</li>
+<li> 添加三击选择一行功能（主要由 cfreeer &lt;cfreeer[at]users.sf.net&gt; 开发）。</li>
 <li> 添加保存文件时更新语法高亮功能（主要由 cfreeer 开发）。</li>
 <li>添加 FreeBASIC 语法文件。</li>
 <li>添加编码分组。</li>
 <li>添加各历史纪录清除支持。</li>
-<li>选项对话框添加十六进制区复制行为的更多选择。</li>
-<li>添加俄文翻译（由 Shamil Bikineyev 翻译）。</li>
+<li>添加十六进制区复制行为的更多选择并添加到选项对话框。</li>
+<li>添加俄文翻译（Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt; ）。</li>
 <li>改善 Windows 下最大化功能（由 Gogo 开发）。</li>
 <li>改善 Windows 下系统集成功能。</li>
 <li>改善字数统计信息的显示效果。</li>
 <li>更改选择下一词行为，同其他编辑器。</li>
 <li>更改查找/替换对话框通知消息到该对话框的底条。</li>
 <li>修正替换时不会循环查找的问题。</li>
-<li>修正中文版 Windows 下不能同时打开文件“a b”和“"aàb”的问题。</li>
+<li>修正中文版 Windows 下不能同时打开文件“a b”和“aÀb”的问题。</li>
 <li>修正当 debug 版 MadEdit/wxMEdit 失去鼠标捕获时断言错误的问题。</li>
 <li>修正当正在选择文本时从 wxMEdit/MadEdit 切出导致的错误行为问题。</li>
 <li>修正当文件从外部更新后点击编辑区导致错误行为的问题。</li>
@@ -322,10 +360,10 @@
 <li> 更新 RPM、debian、FreeBSD 打包文件。</li>
 <li> 修正自动换行最大行长设置过大导致重启程序崩溃问题。</li>
 <li> 改善编译配置。</li>
-<li>更新西班牙文翻译（Carlos Sánchez <a href="mailto:carlos1994sanchez@gmail.com">carlos1994sanchez@gmail.com</a>）。</li>
-<li>更新日文翻译（Tilt <a href="mailto:tiltstr@gmail.com">tiltstr@gmail.com</a>）。</li>
+<li>更新西班牙文翻译（Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;）。</li>
+<li>更新日文翻译（Tilt &lt;tiltstr[at]gmail.com&gt;）。</li>
 <li>更新简体中文翻译。</li>
-<li>更新正体/繁体中文翻译（Denir Li <a href="mailto:denir.li@gmail.com">denir.li@gmail.com</a>）。</li>
+<li>更新正体/繁体中文翻译（Denir Li &lt;denir.li[at]gmail.com&gt;）。</li>
 <li>其他小修改。</li>
 </ol><p>更多改动参见<a href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">改动记录</a>。</p>
 

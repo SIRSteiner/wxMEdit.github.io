@@ -56,6 +56,7 @@
             <a href="ja_JP/downloads.html">日本語</a> 
           </strong></p>
 
+<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>Prerelease</h2>
 
@@ -89,10 +90,12 @@
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.7.2/wxMEdit-2.9.7.2.tar.gz">wxMEdit-2.9.7.2.tar.gz</a></td>
 </tr>
 </tbody>
-</table><h2>
+</table>
+-->
+<h2>
 <a name="latest-release" class="anchor" href="#latest-release"><span class="octicon octicon-link"></span></a>Latest Release</h2>
 
-<p><strong>The current version is: 2.9.7 .</strong></p>
+<p><strong>The current version is: 2.9.8 .</strong></p>
 
 <table>
 <thead><tr>
@@ -104,8 +107,29 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7-win32-bin.7z">wxMEdit-2.9.7-win32-bin.7z</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8-win32-bin.7z">wxMEdit-2.9.8-win32-bin.7z</a></td>
 </tr>
+<tr>
+<td>Archlinux/Gentoo</td>
+<td>any</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>Debian/Ubuntu</td>
+<td>i386/amd64/mipsel</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>CentOS/Fedora</td>
+<td>i386/amd64</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>FreeBSD</td>
+<td>i386/amd64</td>
+<td>(coming soon)</td>
+</tr>
+<!--
 <tr>
 <td>Archlinux</td>
 <td>any</td>
@@ -233,19 +257,20 @@
 <td>amd64</td>
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxmedit-2.9.7-amd64-icu52.txz">wxmedit-2.9.7-amd64-icu52.txz</a></td>
 </tr>
+-->
 <tr>
 <td>Mac OS X</td>
 <td>i386/amd64</td>
 <td>
-<a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7_OSXFix.tar.gz">wxMEdit-2.9.7_OSXFix.tar.gz</a> and follow <a href="https://github.com/hltj/wxMEdit/issues/57">here</a>
-</td>
+<a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a> and follow <a href="https://github.com/hltj/wxMEdit/issues/57">here</a></td>
 </tr>
 <tr>
 <td>Other</td>
 <td>any</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7.tar.gz">wxMEdit-2.9.7.tar.gz</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a></td>
 </tr>
 </tbody>
+<!--
 </table> <p>wxMEdit for RHEL 5 / CentOS 5 depend on libicu-4.2.1 and libicu-devel-4.2.1. Remi RPMs can be used:</p>
 
 <table>
@@ -276,19 +301,31 @@
 <td><a href="ftp://ftp.pbone.net/mirror/rpms.famillecollet.com/enterprise/5/php55/x86_64/libicu-devel-4.2.1-9.1.el5.remi.x86_64.rpm">libicu-devel-4.2.1-9.1.el5.remi.x86_64.rpm</a></td>
 </tr>
 </tbody>
+-->
 </table><h2>
 <a name="change-log" class="anchor" href="#change-log"><span class="octicon octicon-link"></span></a>Change Log</h2>
 
 <h3>
-<a name="2972" class="anchor" href="#2972"><span class="octicon octicon-link"></span></a>2.9.7.2</h3>
+<a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
 <ol>
-<li>made manual update checking asynchronously as same as automatic update checking.</li>
-<li>made default window size bigger.</li>
-<li>added more choices for whether pasting as hex-string in hex-area when editing in hex-mode.</li>
-<li>added new feature: Paste with Overwriting in Hex Area.</li>
+<li> added more choices for whether pasting as hex-string in hex-area when editing in hex-mode.</li>
+<li> added new feature: Paste with Overwriting in Hex Area.</li>
+<li> added more common used encoding aliases and show them in Encoding Conversion Dialog.</li>
+<li> added localization support when open homepage and downloads page.</li>
+<li> added Chinese translations support for zh_HK, zh_MO, zh_SG and zh.</li>
+<li> added an option to place configuration files into %APPDATA% directory under Windows.</li>
+<li> made default window size bigger.</li>
+<li> made manual update checking asynchronously as same as automatic update checking.</li>
+<li> improved encoding groups.</li>
+<li>fixed bugs detected by clang-analyzer.</li>
+<li>fixed memory leak warning when debugging finished under Windows.</li>
 <li>updated FreeBSD packaging that switched to pkgng via ports.</li>
-<li>updated Chinese translations.</li>
+<li>updated Simplified Chinese translation.</li>
+<li>updated Traditional Chinese translation by Vincent_TW.</li>
+<li>updated Spanish translation by Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
+<li>updated Japanese translation by Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
+<li>updated Russian translation by Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;.</li>
 <li>other minor changes and bug fixes.</li>
 </ol><h3>
 <a name="297" class="anchor" href="#297"><span class="octicon octicon-link"></span></a>2.9.7</h3>
@@ -296,25 +333,25 @@
 <ol>
 <li> added new encoding "CP437 Variant for ASCII-Art" to support ASCII-Art better.</li>
 <li> added automatically checking for updates.</li>
-<li> added bookmark support <code>[</code> mainly by Gospodin Gyurov (aka Gogo) <a href="mailto:ggurov@yahoo.com">ggurov@yahoo.com</a> <code>]</code>.</li>
+<li> added bookmark support [ mainly by Gospodin Gyurov (aka Gogo) &lt;ggurov[at]yahoo.com&gt; ].</li>
 <li> added new commands: delete previous/next word (by Gogo).</li>
 <li> added search option "Wrap around".</li>
 <li> added Credits tab in About Dialog.</li>
 <li> added Misc tab in Options Dialog.</li>
-<li> added selecting a line by triple click (mainly by cfreeer <a href="mailto:cfreeer@users.sf.net">cfreeer@users.sf.net</a>).</li>
+<li> added selecting a line by triple click (mainly by cfreeer &lt;cfreeer[at]users.sf.net&gt;).</li>
 <li> added updating syntax highlighting on saving file (mainly by cfreeer).</li>
 <li>added FreeBASIC syntax file.</li>
 <li>added grouping of encodings.</li>
 <li>added purging histories support.</li>
 <li>added more choices for copying in hex-area and added them into Options Dialog.</li>
-<li>added Russian translation (by Shamil Bikineyev).</li>
+<li>added Russian translation by Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;.</li>
 <li>improved maximized behavior under Windows (by Gogo).</li>
 <li>improved system integration under Windows.</li>
 <li>improved display effect of the Word-Count information.</li>
 <li>changed behavior of selecting next word as other editors.</li>
 <li>changed notification messages of Search/Replace Dialog showing in the bottom bar of the dialog.</li>
 <li>fixed always not wrap around when replacing.</li>
-<li>fixed that the files "a b" and "aàb" cannot be opened simultaneously under Windows Chinese Edition.</li>
+<li>fixed that the files "a b" and "aÀb" cannot be opened simultaneously under Windows Chinese Edition.</li>
 <li>fixed assertion failed with debug version of MadEdit/wxMEdit when mouse capture lost.</li>
 <li>fixed incorrect behavior when switch out from wxMEdit/MadEdit on selecting text.</li>
 <li>fixed incorrect behavior when update an opened file and then click the editing area.</li>
@@ -333,10 +370,10 @@
 <li> updated RPM, debian and FreeBSD packaging files.</li>
 <li> fixed crash on restart if "Max line length before Line-Wrap" was set too large.</li>
 <li> improved build configurations.</li>
-<li>updated Spanish translation by Carlos Sánchez <a href="mailto:carlos1994sanchez@gmail.com">carlos1994sanchez@gmail.com</a>.</li>
-<li>updated Japanese translation by Tilt <a href="mailto:tiltstr@gmail.com">tiltstr@gmail.com</a>.</li>
+<li>updated Spanish translation by Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
+<li>updated Japanese translation by Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
 <li>updated Simplified Chinese translation.</li>
-<li>updated Traditional Chinese translation by Denir Li <a href="mailto:denir.li@gmail.com">denir.li@gmail.com</a>.</li>
+<li>updated Traditional Chinese translation by Denir Li &lt;denir.li[at]gmail.com&gt;.</li>
 <li>other minor changes.</li>
 </ol><p>See <a href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">ChangeLog</a> for more changes.</p>
 

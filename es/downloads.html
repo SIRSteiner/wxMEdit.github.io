@@ -46,6 +46,7 @@
             <a href="../ja_JP/downloads.html">日本語</a> 
           </strong></p>
 
+<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>Version preliminar</h2>
 
@@ -79,10 +80,12 @@
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.7.2/wxMEdit-2.9.7.2.tar.gz">wxMEdit-2.9.7.2.tar.gz</a></td>
 </tr>
 </tbody>
-</table><h2>
+</table>
+-->
+<h2>
 <a name="ultimo-lanzamiento" class="anchor" href="#ultimo-lanzamiento"><span class="octicon octicon-link"></span></a>Ultimo Lanzamiento</h2>
 
-<p><strong>La versión actual es: 2.9.7 .</strong></p>
+<p><strong>La versión actual es: 2.9.8 .</strong></p>
 
 <table>
 <thead><tr>
@@ -94,8 +97,29 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7-win32-bin.7z">wxMEdit-2.9.7-win32-bin.7z</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8-win32-bin.7z">wxMEdit-2.9.8-win32-bin.7z</a></td>
 </tr>
+<tr>
+<td>Archlinux/Gentoo</td>
+<td>any</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>Debian/Ubuntu</td>
+<td>i386/amd64/mipsel</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>CentOS/Fedora</td>
+<td>i386/amd64</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>FreeBSD</td>
+<td>i386/amd64</td>
+<td>(coming soon)</td>
+</tr>
+<!--
 <tr>
 <td>Archlinux</td>
 <td>any</td>
@@ -223,18 +247,20 @@
 <td>amd64</td>
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxmedit-2.9.7-amd64-icu52.txz">wxmedit-2.9.7-amd64-icu52.txz</a></td>
 </tr>
+-->
 <tr>
 <td>Mac OS X</td>
 <td>i386/amd64</td>
 <td>
-<a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7_OSXFix.tar.gz">wxMEdit-2.9.7_OSXFix.tar.gz</a> y seguir <a href="https://github.com/hltj/wxMEdit/issues/57">aquí</a></td>
+<a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a> y seguir <a href="https://github.com/hltj/wxMEdit/issues/57">aquí</a></td>
 </tr>
 <tr>
 <td>Otros</td>
 <td>cualquiera</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7.tar.gz">wxMEdit-2.9.7.tar.gz</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a></td>
 </tr>
 </tbody>
+<!--
 </table><p>wxMEdit para RHEL 5 / CentOS 5 depende de libicu-4.2.1 y libicu-devel-4.2.1. Remi RPMs se puede utilizar:</p>
 
 <table>
@@ -265,20 +291,32 @@
 <td><a href="ftp://ftp.pbone.net/mirror/rpms.famillecollet.com/enterprise/5/php55/x86_64/libicu-devel-4.2.1-9.1.el5.remi.x86_64.rpm">libicu-devel-4.2.1-9.1.el5.remi.x86_64.rpm</a></td>
 </tr>
 </tbody>
+-->
 </table><h2>
 <a name="hitorial-de-cambios" class="anchor" href="#hitorial-de-cambios"><span class="octicon octicon-link"></span></a>Hitorial de cambios</h2>
 
 <h3>
-<a name="2972" class="anchor" href="#2972"><span class="octicon octicon-link"></span></a>2.9.7.2</h3>
+<a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
 <ol>
-<li> hecha comprobación de actualización manual de forma asincrónica al igual que la comprobación de actualización automática.</li>
-<li> hecho grande el tamaño de la ventana por defecto.</li>
 <li> añadida más opciones para pegar  como hexadecimal-cadena en área hexadecimal al editar en modo hexadecimal.</li>
 <li> añadida nueva característica: Pegado con Sobreescritura en Area Hexadecimal.</li>
-<li> actualizado empaquetado FreeBSD que cambio a pkgng a través de puertos.</li>
-<li> actualizada traducción al Chino.</li>
-<li> otros cambios menores y correcciones de errores.</li>
+<li> añadido alias de codificaciónes usadas más comunes y mostrarlos en Diálogo de Conversión de Codificación.</li>
+<li> añadido soporte de localización cuando se abre la página de inicio y descargas.</li>
+<li> añadido soporte para traducciones chinas zh_HK, zh_MO, zh_SG y zh.</li>
+<li> añadida una opción para colocar los archivos de configuración en el directorio %APPDATA% bajo Windows.</li>
+<li> hecho grande el tamaño de la ventana por defecto.</li>
+<li> hecha comprobación de actualización manual de forma asincrónica al igual que la comprobación de actualización automática.</li>
+<li> mejorados los grupos de codificación.</li>
+<li>errores corregidos detectados por clang-analyzer.</li>
+<li>corregida pérdida de memoria al terminar de depurar bajo Windows.</li>
+<li>actualizado empaquetado FreeBSD que cambio a pkgng a través de puertos.</li>
+<li>actualizada traducción al Chino Simplificado.</li>
+<li>actualizada traducción al Chino Tradicional por Vincent_TW.</li>
+<li>Actualizada traducción al Español por Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
+<li>actualizada traducción al Japonés por Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
+<li>actualizada traducción al Ruso por Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;.</li>
+<li>otros cambios menores y correcciones de errores.</li>
 </ol><h3>
 <a name="297" class="anchor" href="#297"><span class="octicon octicon-link"></span></a>2.9.7</h3>
 

@@ -46,6 +46,7 @@
             <a href="../es/downloads.html"   >Español</a> 
           </strong></p>
 
+<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>预发布版</h2>
 
@@ -79,10 +80,12 @@
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.7.2/wxMEdit-2.9.7.2.tar.gz">wxMEdit-2.9.7.2.tar.gz</a></td>
 </tr>
 </tbody>
-</table><h2>
+</table>
+-->
+<h2>
 <a name="%E6%9C%80%E6%96%B0%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9" class="anchor" href="#%E6%9C%80%E6%96%B0%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9"><span class="octicon octicon-link"></span></a>最新のリリース</h2>
 
-<p><strong>現在のバージョン: 2.9.7 .</strong></p>
+<p><strong>現在のバージョン: 2.9.8 .</strong></p>
 
 <table>
 <thead><tr>
@@ -94,8 +97,29 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7-win32-bin.7z">wxMEdit-2.9.7-win32-bin.7z</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8-win32-bin.7z">wxMEdit-2.9.8-win32-bin.7z</a></td>
 </tr>
+<tr>
+<td>Archlinux/Gentoo</td>
+<td>any</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>Debian/Ubuntu</td>
+<td>i386/amd64/mipsel</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>CentOS/Fedora</td>
+<td>i386/amd64</td>
+<td>(coming soon)</td>
+</tr>
+<tr>
+<td>FreeBSD</td>
+<td>i386/amd64</td>
+<td>(coming soon)</td>
+</tr>
+<!--
 <tr>
 <td>Archlinux</td>
 <td>any</td>
@@ -223,18 +247,20 @@
 <td>amd64</td>
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxmedit-2.9.7-amd64-icu52.txz">wxmedit-2.9.7-amd64-icu52.txz</a></td>
 </tr>
+-->
 <tr>
 <td>Mac OS X</td>
 <td>i386/amd64</td>
 <td>
-<a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7_OSXFix.tar.gz">wxMEdit-2.9.7_OSXFix.tar.gz</a> and follow <a href="https://github.com/hltj/wxMEdit/issues/57">here</a></td>
+<a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a> and follow <a href="https://github.com/hltj/wxMEdit/issues/57">here</a></td>
 </tr>
 <tr>
 <td>その他</td>
 <td>any</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.7/wxMEdit-2.9.7.tar.gz">wxMEdit-2.9.7.tar.gz</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a></td>
 </tr>
 </tbody>
+<!--
 </table><p>wxMEdit RHEL 5 / CentOS 5 の libicu-4.2.1 と Remi RPMs を利用可能な libicu-devel-4.2.1 では内容が異なります :</p>
 
 <table>
@@ -265,20 +291,32 @@
 <td><a href="ftp://ftp.pbone.net/mirror/rpms.famillecollet.com/enterprise/5/php55/x86_64/libicu-devel-4.2.1-9.1.el5.remi.x86_64.rpm">libicu-devel-4.2.1-9.1.el5.remi.x86_64.rpm</a></td>
 </tr>
 </tbody>
+-->
 </table><h2>
 <a name="%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4" class="anchor" href="#%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4"><span class="octicon octicon-link"></span></a>更新履歴</h2>
 
 <h3>
-<a name="2972" class="anchor" href="#2972"><span class="octicon octicon-link"></span></a>2.9.7.2</h3>
+<a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
 <ol>
-<li> アップデートの自動確認と同じように手動アップデートで非同期的にチェック</li>
-<li> デフォルトウィンドウサイズを大きめに変更</li>
 <li> 追加 - 16 進モードで編集中、16 進領域に 16 進文字列を貼り付ける際の選択肢</li>
 <li> 新たに追加された機能: 16進領域への上書き貼り付け</li>
-<li> 更新 - FreeBSD のパッケージングをポート経由の pkgng に切り替え</li>
-<li> 更新 - 中国語翻訳</li>
-<li> その他マイナーチェンジとバグ修正.</li>
+<li> 追加 - 一般的なエンコーディングのエイリアスを使用してエンコーディング変換ダイアログボックスを表示</li>
+<li> 追加 - ツールから開かれるホームページとダウンロードページを多言語化</li>
+<li> 追加 - 中国語翻訳 zh_HK, zh_MO, zh_SG および zh に対応</li>
+<li> 追加 - Windows の %APPDATA% ディレクトリに構成設定ファイルを配置するオプション</li>
+<li> デフォルトウィンドウサイズを大きめに変更</li>
+<li> アップデートの自動確認と同じように手動アップデートで非同期的にチェック</li>
+<li> 改良 - エンコーディング グループ</li>
+<li>修正 - clang-analyzer によるバグ検出.</li>
+<li>修正 - Windows におけるデバッグ完了時のメモリリーク警告</li>
+<li>更新 - FreeBSD のパッケージングをポート経由の pkgng に切り替え</li>
+<li>更新 - 簡体字中国語翻訳</li>
+<li>更新 - 繁体字中国語翻訳 by Vincent_TW.</li>
+<li>更新 - スペイン語翻訳 by Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
+<li>更新 - 日本語翻訳 by Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
+<li>更新 - ロシア語翻訳 by Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;.</li>
+<li>その他マイナーチェンジとバグ修正.</li>
 </ol><h3>
 <a name="297" class="anchor" href="#297"><span class="octicon octicon-link"></span></a>2.9.7</h3>
 
