@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- vim: set sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel='stylesheet' type='text/css' href='../stylesheets/architectsdaughter.css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="../javascripts/html5.js"></script>
+    <![endif]-->
+
+    <title>wxMEdit - Un Editor de Texto/Hex Multiplataforma</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="inner">
+        <h1>wxMEdit</h1>
+        <h2>Un Editor de Texto/Hex Multiplataforma</h2>
+        <a href="https://github.com/hltj" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <aside id="sidebar">
+          <h2><a>Inicio</a></h2>
+          <h2><a href="downloads.html">Descargas</a></h2>
+          <h2><a href="credits.html">Créditos</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/wiki/Home_es">Wiki</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit">Código</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/issues">Soporte</a></h2>
+        </aside>
+
+        <section id="main-content">
+          <p><strong>
+            <a href="../zh_CN/">简体中文</a> 
+            <a href="../"      >English</a> 
+            <a href="../ja_JP/">日本語</a> 
+          </strong></p>
+
+<h2>
+<a name="wxmedit" class="anchor" href="#wxmedit"><span class="octicon octicon-link"></span></a>wxMEdit</h2>
+
+<ul>
+<li>wxMEdit es un Editor Texto/Hexadecimal multiplataforma escrito en C++ &amp; wxWidgets.</li>
+<li>wxMEdit es una versión mejorada de <a href="http://sourceforge.net/projects/madedit/">MadEdit</a> que ha sido descontinuado.</li>
+<li>wxMEdit puede editar archivos en modos de Texto/Columna/Hexadecimal, y soporta muchas funciones útiles, por ejemplo, marcador, resaltado de sintaxis, codificaciones, ajuste de línea, contar palabras y comprobación de actualizaciones. </li>
+<li>wxMEdit soporta codificaciones comunes (UTF8/16/32, ISO-8859-x, CP125x, KOI8, GB18030, Big5, ...) no sólo en los modos Texto/Columna sino también en el modo Hexadecimal.</li>
+<li>El propósito de este proyecto es proporcionar un editor de Texto/Hexadecimal continuamente mantenido con correcciones de errores, mejoras y refactorizar.</li>
+</ul><h2>
+<a name="cambios-principales-desde-madedit-029" class="anchor" href="#cambios-principales-desde-madedit-029"><span class="octicon octicon-link"></span></a>Cambios principales desde MadEdit 0.2.9</h2>
+
+<ul>
+<li>Añadido comprobar automáticamente si hay actualizaciones.</li>
+<li>Añdido soporte de marcador.</li>
+<li>Añadido soporte para purgar historiales.</li>
+<li>Añadido seleccionar una línea con triple clic.</li>
+<li>Añadido archivo de sintaxis FreeBASIC.</li>
+<li>Añadida una opción para colocar los archivos de configuración en el directorio %APPDATA% bajo Windows.</li>
+<li>Mejorado el soporte para "Buscar / Reemplazar".</li>
+<li>Mejorado el soporte para Mac OS X.</li>
+<li>Mejorada la integración del sistema en Windows.</li>
+<li>Mejorado el resultado de la detección de codificación.</li>
+<li>Mejorado el soporte de edición Hexadecimal.
+
+<ul>
+<li>Añadidas más opciones para copiar/pegar el formato de datos en Area Hexadecimal.</li>
+<li>Nueva característica añadida: Pegar con Sobreescritura en Area Hexadecimal.</li>
+</ul>
+</li>
+<li>Mejorado el soporte de codificación.
+
+<ul>
+<li>Añadido agrupación de codificaciones.</li>
+<li>Añadidas nuevas codificaciones: ISO-8859-16, Windows-1258, KOI8-R, KOI8-U, GB18030, CP850, CP852, CP855, CP866, CP437 Variante para ASCII-Art.</li>
+</ul>
+</li>
+<li>Diálogos rediseñados con Code::Blocks wxSmith.</li>
+<li>Traducciones actualizadas.
+
+<ul>
+<li>Añadida traducción al Español.</li>
+<li>Añadida traducción al Ruso.</li>
+<li>Actualizado Chino Simplificado, Chino Tradicional y traducciones Japonesas.</li>
+</ul>
+</li>
+<li>Solucionados muchos problemas y otros errores.</li>
+<li>Mejora de contrucción y configuraciones de enpaquetado.</li>
+</ul><p>Ver <a href="/hltj/wxMEdit/blob/master/ChangeLog">ChangeLog</a> para más cambios.</p>
+
+<h2>
+<a name="caracter%C3%ADsticas" class="anchor" href="#caracter%C3%ADsticas"><span class="octicon octicon-link"></span></a>Características</h2>
+
+<ul>
+<li>wxMEdit puede ejecutarse bajo las plataformas MS-Windows, Linux, FreeBSD y Mac OS X.</li>
+<li>Comprueba si hay actualizaciones automáticamente.</li>
+<li>Soporta marcador.</li>
+<li>Edita archivos en los modos de Texto, Columnas y Hexadecimal.</li>
+<li>En Modo  Hexadecimal, wxMEdit puede abrir archivos de gran tamaño de hasta 32 GB (INT_MAX*16).</li>
+<li>Los usuarios pueden cambiar la codificación de archivos en tiempo de ejecución como los Navegadores Web.</li>
+<li>Soporta muchos sistemas de codificación, por ejemplo:
+
+<ul>
+<li>Unicode (UTF-8, UTF-16/32 con Little o Big Endian);</li>
+<li>ISO-8859-1~16, Windows-1250~1258;</li>
+<li>KOI8-R/U;</li>
+<li>MS936(GBK*), GB18030, MS950(Big5*), Windows-31J(Shift-JIS*);</li>
+<li>etc.</li>
+</ul>
+</li>
+<li>Soporta caracteres Unicode no-BMP Tales como CJK Ext-B/C/D, Letras Miao, Símbolos Matemáticos Alfanuméricos, Símbolos Musicales, Emoji, etc.</li>
+<li>Si los usuarios introducen un carácter que no es compatible con la codificación actual, este carácter se convertirá a formato de escape Unicode (único formato de punto de código compatible actualmente).</li>
+<li>Búsqueda &amp; Reemplazo de expresiones regulares.</li>
+<li>Abre varios archivos en una sola instancia.</li>
+<li>Soporta resaltado de sintaxis de muchos lenguajes de programación:
+
+<ul>
+<li>awk, C/C++, CSS, diff/patch, D, DOS Batch Script, Flash ActionScript, HTML, Java, JavaScript, JSP, Lua, Pascal, PHP, Perl, Python, Ruby, UNIX Shell Script, x86 Assembly, XML, Fortran, TeX/LaTeX, Squirrel, C#, Visual Basic, ASP(VBScript), SQL, Verilog, VHDL, FreeBASIC.</li>
+</ul>
+</li>
+<li>wxMEdit puede ver los archivos ASCII-Art con fuente de espacio sencillo, por ejemplo:
+
+<ul>
+<li>Courier New bajo Windows/Mac OS X;</li>
+<li>Andale Mono, Courier, Menlo, Monaco bajo Mac OS X;</li>
+<li>Consola y Fijo bajo Sistemas Operativos como Unix; </li>
+<li>DejaVu Sans Mono, Free Mono, Liberation Mono, etc.</li>
+</ul>
+</li>
+</ul>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53914281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

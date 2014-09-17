@@ -10,7 +10,7 @@
         if (s.match(/^\?es_[A-Z][A-Z]/))
           s = '?es';
         var l10n = {'?zh_CN':'zh_CN', '?zh_SG':'zh_CN', '?zh':'zh_CN', '?zh_TW':'', 
-                    '?zh_HK':'', '?zh_MO':'', '?ja_JP':'ja_JP', '?ja':'ja_JP', '?es':'', }[s] || '';
+                    '?zh_HK':'', '?zh_MO':'', '?ja_JP':'ja_JP', '?ja':'ja_JP', '?es':'es', }[s] || '';
         location = l10n + location.pathname + location.hash;
       }
     </script>  
@@ -51,6 +51,7 @@
         <section id="main-content">
           <p><strong>
             <a href="zh_CN/downloads.html">简体中文</a> 
+            <a href="es/downloads.html"   >Español</a> 
             <a href="ja_JP/downloads.html">日本語</a> 
           </strong></p>
 
