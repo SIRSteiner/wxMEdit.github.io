@@ -9,8 +9,8 @@
         var s = location.search;
         if (s.match(/^\?es_[A-Z][A-Z]/))
           s = '?es';
-        var l10n = {'?zh_CN':'zh_CN', '?zh_SG':'zh_CN', '?zh':'zh_CN', '?zh_TW':'', 
-                    '?zh_HK':'', '?zh_MO':'', '?ja_JP':'ja_JP', '?ja':'ja_JP', '?es':'es', }[s] || '';
+        var l10n = {'?zh_CN':'zh_CN', '?zh_SG':'zh_CN', '?zh':'zh_CN', '?zh_TW':'zh_TW', '?zh_HK':'zh_TW', 
+                    '?zh_MO':'zh_TW', '?ja_JP':'ja_JP', '?ja':'ja_JP', '?es':'es', }[s] || '';
         location = l10n + location.pathname + location.hash;
       }
     </script>  
@@ -50,6 +50,7 @@
         <section id="main-content">
           <p><strong>
             <a href="zh_CN/">简体中文</a> 
+            <a href="zh_TW/">正體中文</a> 
             <a href="es/"   >Español</a> 
             <a href="ja_JP/">日本語</a> 
           </strong></p>
