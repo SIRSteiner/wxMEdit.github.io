@@ -214,6 +214,15 @@ ul ul, ol ul {
   margin-bottom: 0px;
 }
 
+ol {
+  list-style-type: decimal;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+  margin-bottom: 0px;
+}
+
 /* COMMON STYLES */
 
 hr {
