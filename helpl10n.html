@@ -4,6 +4,16 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script type="text/javascript">
+      if (location.search) {
+        var s = location.search;
+        if (s.match(/^\?es_[A-Z][A-Z]/))
+          s = '?es';
+        var l10n = {'?zh_CN':'zh_CN', '?zh_SG':'zh_CN', '?zh':'zh_CN', '?zh_TW':'zh_CN', 
+                    '?zh_HK':'zh_CN', '?ja_JP':'', '?ja':'', '?es':'', }[s] || '';
+        location = l10n + location.pathname + location.hash;
+      }
+    </script>  
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel='stylesheet' type='text/css' href='stylesheets/architectsdaughter.css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
