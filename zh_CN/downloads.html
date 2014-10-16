@@ -47,11 +47,10 @@
             <a href="helpl10n.html" style="float:right;">［改善不同地域的中文翻译］</a> 
           </strong></p>
 
-<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>预发布版</h2>
 
-<p><strong>最新的预发布版：2.9.7.2。</strong></p>
+<p><strong>最新的预发布版：2.9.8.2。</strong></p>
 
 <table>
 <thead><tr>
@@ -63,26 +62,27 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.7.2/wxMEdit-2.9.7.2-win32-bin.7z">wxMEdit-2.9.7.2-win32-bin.7z</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.2/wxMEdit-2.9.8.2-win32-bin.7z">wxMEdit-2.9.8.2-win32-bin.7z</a></td>
 </tr>
+<!--
 <tr>
 <td>FreeBSD 10.0</td>
 <td>i386</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.7.2/wxmedit-2.9.7.2-i386-icu53.txz">wxmedit-2.9.7.2-i386-icu53.txz</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.2/wxmedit-2.9.8.2-i386-icu53.txz">wxmedit-2.9.8.2-i386-icu53.txz</a></td>
 </tr>
 <tr>
 <td>FreeBSD 10.0</td>
 <td>amd64</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.7.2/wxmedit-2.9.7.2-amd64-icu53.txz">wxmedit-2.9.7.2-amd64-icu53.txz</a></td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.2/wxmedit-2.9.8.2-amd64-icu53.txz">wxmedit-2.9.8.2-amd64-icu53.txz</a></td>
 </tr>
+-->
 <tr>
-<td>Other</td>
-<td>other</td>
-<td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.7.2/wxMEdit-2.9.7.2.tar.gz">wxMEdit-2.9.7.2.tar.gz</a></td>
+<td>其他</td>
+<td>任意</td>
+<td><a href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.2/wxMEdit-2.9.8.2.tar.gz">wxMEdit-2.9.8.2.tar.gz</a></td>
 </tr>
 </tbody>
 </table>
--->
 <h2>
 <a name="%E6%9C%80%E6%96%B0%E5%8F%91%E5%B8%83%E7%89%88" class="anchor" href="#%E6%9C%80%E6%96%B0%E5%8F%91%E5%B8%83%E7%89%88"><span class="octicon octicon-link"></span></a>最新发布版</h2>
 
@@ -230,8 +230,8 @@
 <a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a> 并参见<a href="https://github.com/hltj/wxMEdit/issues/57">这里</a>安装</td>
 </tr>
 <tr>
-<td>Other</td>
-<td>any</td>
+<td>其他</td>
+<td>任意</td>
 <td><a href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a></td>
 </tr>
 </tbody>
@@ -271,6 +271,13 @@
 <a name="%E6%94%B9%E5%8A%A8%E8%AE%B0%E5%BD%95" class="anchor" href="#%E6%94%B9%E5%8A%A8%E8%AE%B0%E5%BD%95"><span class="octicon octicon-link"></span></a>改动记录</h2>
 
 <h3>
+<a name="2982" class="anchor" href="#2982"><span class="octicon octicon-link"></span></a>2.9.8.2</h3>
+
+<ol>
+<li> 修正保存空文件崩溃问题。</li>
+<li> 更新西班牙文翻译。</li>
+<li> 更新 wxmedit.desktop 各语言翻译。</li>
+</ol><h3>
 <a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
 <ol>
@@ -321,24 +328,6 @@
 <li>修正当文件从外部更新后点击编辑区导致错误行为的问题。</li>
 <li>更新简体中文、日文、西班牙文翻译。</li>
 <li>其他小修改及问题修正。</li>
-</ol><h3>
-<a name="296" class="anchor" href="#296"><span class="octicon octicon-link"></span></a>2.9.6</h3>
-
-<ol>
-<li> 改进 Mac OS X 支持。</li>
-<li> 用 wxSmith 重做各对话框并修正对话框尺寸问题。</li>
-<li> 重构编码识别逻辑修正编码识别问题。</li>
-<li> 修正 Windows 下十六进制模式重绘问题。</li>
-<li> 修正类 Unix 操作系统下当光标在编辑区最上几行时打开多文件查找结果面板崩溃问题。</li>
-<li> 修正当取消文件关联时 wxWidgets 报错问题。</li>
-<li> 更新 RPM、debian、FreeBSD 打包文件。</li>
-<li> 修正自动换行最大行长设置过大导致重启程序崩溃问题。</li>
-<li> 改善编译配置。</li>
-<li>更新西班牙文翻译（Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;）。</li>
-<li>更新日文翻译（Tilt &lt;tiltstr[at]gmail.com&gt;）。</li>
-<li>更新简体中文翻译。</li>
-<li>更新正体/繁体中文翻译（Denir Li &lt;denir.li[at]gmail.com&gt;）。</li>
-<li>其他小修改。</li>
 </ol><p>更多改动参见<a href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">改动记录</a>。</p>
 
 <h2>
