@@ -46,6 +46,7 @@
             <a href="../ja_JP/downloads.html">日本語</a> 
           </strong></p>
 
+<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>Version preliminar</h2>
 
@@ -63,7 +64,6 @@
 <td>i386/amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3-win32-bin.7z">wxMEdit-2.9.8.3-win32-bin.7z</a></td>
 </tr>
-<!--
 <tr>
 <td>FreeBSD 10.0</td>
 <td>i386</td>
@@ -74,7 +74,6 @@
 <td>amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-amd64-icu53.txz">wxmedit-2.9.8.3-amd64-icu53.txz</a></td>
 </tr>
--->
 <tr>
 <td>Otros</td>
 <td>Otros</td>
@@ -82,10 +81,11 @@
 </tr>
 </tbody>
 </table>
+-->
 <h2>
 <a name="ultimo-lanzamiento" class="anchor" href="#ultimo-lanzamiento"><span class="octicon octicon-link"></span></a>Ultimo Lanzamiento</h2>
 
-<p><strong>La versión actual es: 2.9.8.1 .</strong></p>
+<p><strong>La versión actual es: 2.9.9 .</strong></p>
 
 <table>
 <thead><tr>
@@ -97,8 +97,9 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8-win32-bin.7z">wxMEdit-2.9.8-win32-bin.7z</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9-win32-bin.7z">wxMEdit-2.9.9-win32-bin.7z</a></td>
 </tr>
+<!--
 <tr>
 <td>Archlinux</td>
 <td>any</td>
@@ -222,16 +223,17 @@
 <td>amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxmedit-2.9.8-amd64-icu53.txz">wxmedit-2.9.8-amd64-icu53.txz</a></td>
 </tr>
+-->
 <tr>
 <td>Mac OS X</td>
 <td>i386/amd64</td>
 <td>
-<a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a> y seguir <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">aquí</a></td>
+<a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9.tar.gz">wxMEdit-2.9.9.tar.gz</a> y seguir <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">aquí</a></td>
 </tr>
 <tr>
 <td>Otros</td>
 <td>cualquiera</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9.tar.gz">wxMEdit-2.9.9.tar.gz</a></td>
 </tr>
 </tbody>
 <!--
@@ -270,7 +272,7 @@
 <a name="hitorial-de-cambios" class="anchor" href="#hitorial-de-cambios"><span class="octicon octicon-link"></span></a>Hitorial de cambios</h2>
 
 <h3>
-<a name="2983" class="anchor" href="#2983"><span class="octicon octicon-link"></span></a>2.9.8.3</h3>
+<a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
 
 <ol>
 <li> added right-click context menu for each tab.</li>
@@ -278,9 +280,19 @@
 <li> added new feature: close files under given folder.</li>
 <li> added new features: close to the left/right, close all but this.</li>
 <li> added bookmark buttons to toolbar.</li>
+<li> added encoding aliases support for Find-in-Files Dialog and Options Dialog.</li>
+<li> added always saving &amp; restoring normalize window size support for UNIX like OS.</li>
+<li> improved localization for syntax title.</li>
 <li> fixed crash when saving a empty file.</li>
-<li> updated translations of wxmedit.desktop.</li>
-<li> other minor changes and bug fixes.</li>
+<li>fixed crash when opening Find Dialog with max line length &lt; 100 and find-text history not empty.</li>
+<li>fixed crash when purging find/replace-text history immediately after wxMEdit start.</li>
+<li>fixed that syntax type is always reset on saving even manually changed.</li>
+<li>updated translations of wxmedit.desktop.</li>
+<li>actualizada traducción al Chino Simplificado.</li>
+<li>actualizada traducción al Chino Tradicional por Vincent_TW.</li>
+<li>actualizada traducción al Español por Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
+<li>actualizada traducción al Japonés por Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
+<li>otros cambios menores y correcciones de errores.</li>
 </ol><h3>
 <a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
@@ -299,7 +311,7 @@
 <li>actualizado empaquetado FreeBSD que cambio a pkgng a través de puertos.</li>
 <li>actualizada traducción al Chino Simplificado.</li>
 <li>actualizada traducción al Chino Tradicional por Vincent_TW.</li>
-<li>Actualizada traducción al Español por Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
+<li>actualizada traducción al Español por Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
 <li>actualizada traducción al Japonés por Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
 <li>otros cambios menores y correcciones de errores.</li>
 </ol><h3>

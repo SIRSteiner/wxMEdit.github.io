@@ -47,6 +47,7 @@
             <a href="../zh_CN/helpl10n.html" style="float:right;">［改善不同地域的中文翻译］</a> 
           </strong></p>
 
+<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>預發佈版</h2>
 
@@ -64,7 +65,6 @@
 <td>i386/amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3-win32-bin.7z">wxMEdit-2.9.8.3-win32-bin.7z</a></td>
 </tr>
-<!--
 <tr>
 <td>FreeBSD 10.0</td>
 <td>i386</td>
@@ -75,7 +75,6 @@
 <td>amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-amd64-icu53.txz">wxmedit-2.9.8.3-amd64-icu53.txz</a></td>
 </tr>
--->
 <tr>
 <td>Other</td>
 <td>other</td>
@@ -83,10 +82,11 @@
 </tr>
 </tbody>
 </table>
+-->
 <h2>
 <a name="%E6%9C%80%E6%96%B0%E7%99%BC%E4%BD%88%E7%89%88" class="anchor" href="#%E6%9C%80%E6%96%B0%E7%99%BC%E4%BD%88%E7%89%88"><span class="octicon octicon-link"></span></a>最新發佈版</h2>
 
-<p><strong>目前版本：2.9.8.1。</strong></p>
+<p><strong>目前版本：2.9.9。</strong></p>
 
 <table>
 <thead><tr>
@@ -98,8 +98,9 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8-win32-bin.7z">wxMEdit-2.9.8-win32-bin.7z</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9-win32-bin.7z">wxMEdit-2.9.9-win32-bin.7z</a></td>
 </tr>
+<!--
 <tr>
 <td>Archlinux</td>
 <td>any</td>
@@ -223,16 +224,17 @@
 <td>amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxmedit-2.9.8-amd64-icu53.txz">wxmedit-2.9.8-amd64-icu53.txz</a></td>
 </tr>
+-->
 <tr>
 <td>Mac OS X</td>
 <td>i386/amd64</td>
 <td>
-<a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a> 並參考<a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">這裡</a>安裝</td>
+<a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9.tar.gz">wxMEdit-2.9.9.tar.gz</a> 並參考<a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">這裡</a>安裝</td>
 </tr>
 <tr>
 <td>Other</td>
 <td>any</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9.tar.gz">wxMEdit-2.9.9.tar.gz</a></td>
 </tr>
 </tbody>
 <!--
@@ -271,23 +273,33 @@
 <a name="%E6%9B%B4%E5%8B%95%E8%A8%98%E9%8C%84" class="anchor" href="#%E6%9B%B4%E5%8B%95%E8%A8%98%E9%8C%84"><span class="octicon octicon-link"></span></a>更動記錄</h2>
 
 <h3>
-<a name="2983" class="anchor" href="#2983"><span class="octicon octicon-link"></span></a>2.9.8.3</h3>
+<a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
 
 <ol>
-<li> added right-click context menu for each tab.</li>
-<li> added more information for Word Count Dialog.</li>
-<li> added new feature: close files under given folder.</li>
-<li> added new features: close to the left/right, close all but this.</li>
-<li> added bookmark buttons to toolbar.</li>
-<li> fixed crash when saving a empty file.</li>
-<li> updated translations of wxmedit.desktop.</li>
-<li> other minor changes and bug fixes.</li>
+<li> 分頁上增加右鍵功能表。</li>
+<li> 字數統計對話框增加更多資訊。</li>
+<li> 增加新功能：關閉指定資料夾下的檔案。</li>
+<li> 增加新功能：關閉左/右側所有分頁，關閉所有其它分頁。</li>
+<li> 工具列上增加書籤操作圖示。</li>
+<li> 多檔案尋找對話框及選項對話框增加編碼別名支援。</li>
+<li> 類 UNIX 系統增加總是儲存/恢復視窗的一般大小支援。</li>
+<li> 改進語法名稱的本地化翻譯。</li>
+<li> 修正儲存空檔案當掉問題。</li>
+<li>修正當最大行長設定小於 100 且尋找文字歷史紀錄非空時開啟尋找對話框當掉問題。</li>
+<li>修正執行 wxMEdit 後立即清除尋找/取代文字歷史紀錄時當掉問題。</li>
+<li>修正即便人為選擇了語法類型，儲存檔案時還總會重設問題。</li>
+<li>更新 wxmedit.desktop 各語言翻譯。</li>
+<li>更新簡體中文翻譯。</li>
+<li>更新繁體中文翻譯（Vincent_TW）。</li>
+<li>更新西班牙文翻譯（Carlos Sanchez &lt;carlos1994sanchez[at]gmail.com&gt;）。</li>
+<li>更新日文翻譯（Tilt &lt;tiltstr[at]gmail.com&gt;）。</li>
+<li>其它小修改及問題修正。</li>
 </ol><h3>
 <a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
 <ol>
-<li> 增加是否在十六進位編輯區域貼上為十六進位字串的更多選擇。</li>
-<li> 增加新功能：在十六進位編輯區域覆蓋貼上。</li>
+<li> 增加是否在十六進位元編輯區域貼上為十六進位元字串的更多選擇。</li>
+<li> 增加新功能：在十六進位元編輯區域覆蓋貼上。</li>
 <li> 增加更多常用編碼別名並在編碼轉換對話框中顯示。</li>
 <li> 開啟首頁或下載頁時，增加本地化支援。</li>
 <li> 增加 zh_HK、zh_MO、zh_SG 和 zh 中文翻譯支援。</li>
@@ -319,7 +331,7 @@
 <li>增加 FreeBASIC 語法檔案。</li>
 <li>增加編碼分組。</li>
 <li>增加各歷史紀錄清除支援。</li>
-<li>增加十六進位區複製行為的更多選擇並增加到選項對話框。</li>
+<li>增加十六進位元區複製行為的更多選擇並增加到選項對話框。</li>
 <li>增加俄文翻譯（Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;）。</li>
 <li>改善 Windows 下最大化功能（由 Gogo 開發）。</li>
 <li>改善 Windows 下系統整合功能。</li>

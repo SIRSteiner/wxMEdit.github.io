@@ -46,6 +46,7 @@
             <a href="../es/downloads.html"   >Español</a> 
           </strong></p>
 
+<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>预发布版</h2>
 
@@ -63,7 +64,6 @@
 <td>i386/amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3-win32-bin.7z">wxMEdit-2.9.8.3-win32-bin.7z</a></td>
 </tr>
-<!--
 <tr>
 <td>FreeBSD 10.0</td>
 <td>i386</td>
@@ -74,7 +74,6 @@
 <td>amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-amd64-icu53.txz">wxmedit-2.9.8.3-amd64-icu53.txz</a></td>
 </tr>
--->
 <tr>
 <td>その他</td>
 <td>その他</td>
@@ -82,10 +81,11 @@
 </tr>
 </tbody>
 </table>
+-->
 <h2>
 <a name="%E6%9C%80%E6%96%B0%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9" class="anchor" href="#%E6%9C%80%E6%96%B0%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9"><span class="octicon octicon-link"></span></a>最新のリリース</h2>
 
-<p><strong>現在のバージョン: 2.9.8.1 .</strong></p>
+<p><strong>現在のバージョン: 2.9.9 .</strong></p>
 
 <table>
 <thead><tr>
@@ -97,8 +97,9 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8-win32-bin.7z">wxMEdit-2.9.8-win32-bin.7z</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9-win32-bin.7z">wxMEdit-2.9.9-win32-bin.7z</a></td>
 </tr>
+<!--
 <tr>
 <td>Archlinux</td>
 <td>any</td>
@@ -222,16 +223,17 @@
 <td>amd64</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxmedit-2.9.8-amd64-icu53.txz">wxmedit-2.9.8-amd64-icu53.txz</a></td>
 </tr>
+-->
 <tr>
 <td>Mac OS X</td>
 <td>i386/amd64</td>
 <td>
-<a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a> and follow <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">here</a></td>
+<a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9.tar.gz">wxMEdit-2.9.9.tar.gz</a> and follow <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">here</a></td>
 </tr>
 <tr>
 <td>その他</td>
 <td>any</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.8/wxMEdit-2.9.8.tar.gz">wxMEdit-2.9.8.tar.gz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/2.9.9/wxMEdit-2.9.9.tar.gz">wxMEdit-2.9.9.tar.gz</a></td>
 </tr>
 </tbody>
 <!--
@@ -270,17 +272,27 @@
 <a name="%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4" class="anchor" href="#%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4"><span class="octicon octicon-link"></span></a>更新履歴</h2>
 
 <h3>
-<a name="2983" class="anchor" href="#2983"><span class="octicon octicon-link"></span></a>2.9.8.3</h3>
+<a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
 
 <ol>
-<li> added right-click context menu for each tab.</li>
-<li> added more information for Word Count Dialog.</li>
-<li> added new feature: close files under given folder.</li>
-<li> added new features: close to the left/right, close all but this.</li>
-<li> added bookmark buttons to toolbar.</li>
-<li> fixed crash when saving a empty file.</li>
-<li> updated translations of wxmedit.desktop.</li>
-<li> other minor changes and bug fixes.</li>
+<li> 追加 - タブ毎の右クリックコンテキストメニュー</li>
+<li> 追加 - 単語数カウントダイアログの情報</li>
+<li> 追加 - 新たな機能: 指定フォルダ以下のファイルを閉じる</li>
+<li> 追加 - 新たな機能: 左/右側すべてを閉じる、現在のファイル以外を閉じる</li>
+<li> 追加 - ツールバーのブックマークボタン</li>
+<li> 追加 - ファイル内検索、オプションダイアログでエンコーディング エイリアスに対応</li>
+<li> 追加 - 標準ウィンドウサイズを常に保存/復元 (UNIX OS のように) </li>
+<li> 改良 - 構文タイトルのローカライゼーション</li>
+<li> 修正 - 空のファイル保存時のクラッシュ</li>
+<li>修正 - 最大行長 &lt; 100 および検索テキスト履歴が空でない時に検索ダイアログを開こうとした際の不具合</li>
+<li>修正 - wxMEdit 起動直後、検索置換テキスト履歴をパージする際のクラッシュ</li>
+<li>修正 -  構文タイプを手動で変更して保存する時に常にリセットされていた不具合</li>
+<li>更新 - wxmedit.desktop 翻訳</li>
+<li>更新 - 簡体字中国語翻訳</li>
+<li>更新 - 繁体字中国語翻訳 by Vincent_TW.</li>
+<li>更新 - スペイン語翻訳 by Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
+<li>更新 - 日本語翻訳 by Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
+<li>その他マイナーチェンジとバグ修正.</li>
 </ol><h3>
 <a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
