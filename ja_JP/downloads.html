@@ -46,11 +46,10 @@
             <a href="../es/downloads.html"   >Español</a> 
           </strong></p>
 
-<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>预发布版</h2>
 
-<p><strong>最新のプレリリース: 2.9.8.3 .</strong></p>
+<p><strong>最新のプレリリース: 2.9.9.2 .</strong></p>
 
 <table>
 <thead><tr>
@@ -62,25 +61,16 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3-win32-bin.7z">wxMEdit-2.9.8.3-win32-bin.7z</a></td>
-</tr>
-<tr>
-<td>FreeBSD 10</td>
-<td>i386</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-i386-icu53.txz">wxmedit-2.9.8.3-i386-icu53.txz</a></td>
-</tr>
-<tr>
-<td>FreeBSD 10</td>
-<td>amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-amd64-icu53.txz">wxmedit-2.9.8.3-amd64-icu53.txz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2-win32-bin.7z">wxMEdit-2.9.9.2-win32-bin.7z</a></td>
 </tr>
 <tr>
 <td>その他</td>
 <td>その他</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3.tar.gz">wxMEdit-2.9.8.3.tar.gz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2.tar.gz">wxMEdit-2.9.9.2.tar.gz</a></td>
 </tr>
 </tbody>
 </table>
+<!--
 -->
 <h2>
 <a name="%E6%9C%80%E6%96%B0%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9" class="anchor" href="#%E6%9C%80%E6%96%B0%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9"><span class="octicon octicon-link"></span></a>最新のリリース</h2>
@@ -264,6 +254,18 @@
 <a name="%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4" class="anchor" href="#%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4"><span class="octicon octicon-link"></span></a>更新履歴</h2>
 
 <h3>
+<a name="2992" class="anchor" href="#2992"><span class="octicon octicon-link"></span></a>2.9.9.2</h3>
+
+<ol>
+<li> added new options to display/print bookmark independent of line number.</li>
+<li> improved bookmark appearance for displaying and printing.</li>
+<li> improved Tab and EOF mark pattern, make it easy to distinguish Tab mark from space mark.</li>
+<li> fixed that there are too few characters limited in a line with certain word wrap settings.</li>
+<li> fixed that width of list items in Syntax Highlighting Settings Dialog are not updated on resizing.</li>
+<li> updated Unicode block descriptions for Unicode 7.0 (require ICU 54 or higher).</li>
+<li> 更新 - 簡体字中国語翻訳</li>
+<li> その他マイナーチェンジとバグ修正.</li>
+</ol><h3>
 <a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
 
 <ol>
@@ -305,36 +307,6 @@
 <li>更新 - 繁体字中国語翻訳 by Vincent_TW.</li>
 <li>更新 - スペイン語翻訳 by Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
 <li>更新 - 日本語翻訳 by Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
-<li>その他マイナーチェンジとバグ修正.</li>
-</ol><h3>
-<a name="297" class="anchor" href="#297"><span class="octicon octicon-link"></span></a>2.9.7</h3>
-
-<ol>
-<li> 追加 - アスキーアートに適した新たなエンコーディング "CP437 Variant for ASCII-Art" に対応.</li>
-<li> 追加 - アップデートの自動確認機能.</li>
-<li> 追加 - ブックマークに対応 [mainly by Gospodin Gyurov (aka Gogo) &lt;ggurov[at]yahoo.com&gt; ].</li>
-<li> 追加 - 新たなコマンド: 前/次の単語を削除 (by Gogo).</li>
-<li> 追加 - 検索オプション "折り返す".</li>
-<li> 追加 - バージョン情報ダイアログ内 クレジット タブ.</li>
-<li> 追加 - オプションダイアログ内 その他 タブ.</li>
-<li> 追加 - トリプルクリックによる行選択 (mainly by cfreeer &lt;cfreeer[at]users.sf.net&gt;).</li>
-<li> 追加 - 保存したファイルから構文定義を更新 (mainly by cfreeer).</li>
-<li>追加 - FreeBASIC 構文定義ファイル.</li>
-<li>追加 - エンコーディングのグループ化.</li>
-<li>追加 - 履歴の削除に対応.</li>
-<li>追加 - オプションダイアログ内 16 進領域でコピーする際の選択肢.</li>
-<li>追加 - ロシア語翻訳 by Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;.</li>
-<li>改良 - Windows における最大化時の挙動 (by Gogo).</li>
-<li>改良 - Windows におけるシステムへの統合.</li>
-<li>改良 - 単語数カウント情報の描画</li>
-<li>変更 - 別のエディタで次の単語を選択する際の動作.</li>
-<li>変更 - ダイアログボックス下部バーで表示される 検索/置換 ダイアログボックスの通知メッセージ.</li>
-<li>修正 - 置き換え時の常時折り返しなし.</li>
-<li>修正 - Windows 中国語版においてファイル "a b" と "aÀb" を同時に開けなかった不具合.</li>
-<li>修正 - MadEdit/wxMEdit デバッグ版でマウスキャプチャを失った時、アサーションに失敗する不具合.</li>
-<li>修正 - wxMEdit/MadEdit でテキスト選択中に切り替えた時の不適切な振る舞い.</li>
-<li>修正 - ファイルを開き編集領域をクリックした時の更新動作.</li>
-<li>更新 - 簡体字中国語, 日本語, スペイン語翻訳.</li>
 <li>その他マイナーチェンジとバグ修正.</li>
 </ol><p>更に詳細な情報は <a target="_blank" href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">更新履歴</a> をご覧ください。</p>
 

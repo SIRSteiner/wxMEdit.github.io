@@ -47,11 +47,10 @@
             <a href="helpl10n.html" style="float:right;">［改善不同地域的中文翻译］</a> 
           </strong></p>
 
-<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>预发布版</h2>
 
-<p><strong>最新的预发布版：2.9.8.3。</strong></p>
+<p><strong>最新的预发布版：2.9.9.2。</strong></p>
 
 <table>
 <thead><tr>
@@ -63,25 +62,16 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3-win32-bin.7z">wxMEdit-2.9.8.3-win32-bin.7z</a></td>
-</tr>
-<tr>
-<td>FreeBSD 10</td>
-<td>i386</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-i386-icu53.txz">wxmedit-2.9.8.3-i386-icu53.txz</a></td>
-</tr>
-<tr>
-<td>FreeBSD 10</td>
-<td>amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-amd64-icu53.txz">wxmedit-2.9.8.3-amd64-icu53.txz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2-win32-bin.7z">wxMEdit-2.9.9.2-win32-bin.7z</a></td>
 </tr>
 <tr>
 <td>其他</td>
 <td>任意</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3.tar.gz">wxMEdit-2.9.8.3.tar.gz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2.tar.gz">wxMEdit-2.9.9.2.tar.gz</a></td>
 </tr>
 </tbody>
 </table>
+<!--
 -->
 <h2>
 <a name="%E6%9C%80%E6%96%B0%E5%8F%91%E5%B8%83%E7%89%88" class="anchor" href="#%E6%9C%80%E6%96%B0%E5%8F%91%E5%B8%83%E7%89%88"><span class="octicon octicon-link"></span></a>最新发布版</h2>
@@ -265,6 +255,18 @@
 <a name="%E6%94%B9%E5%8A%A8%E8%AE%B0%E5%BD%95" class="anchor" href="#%E6%94%B9%E5%8A%A8%E8%AE%B0%E5%BD%95"><span class="octicon octicon-link"></span></a>改动记录</h2>
 
 <h3>
+<a name="2992" class="anchor" href="#2992"><span class="octicon octicon-link"></span></a>2.9.9.2</h3>
+
+<ol>
+<li> 添加新选项显示/打印书签，独立于行号显示/打印。</li>
+<li> 改进书签的显示及打印效果。</li>
+<li> 改进制表符标记及文件结束标记图案，以便区分制表符标记与空格标记。</li>
+<li> 修正按特定的自动换行设置时每行字符数过少的问题。</li>
+<li> 修正语法高亮对话框中缩放大小时，其中列表项的宽度不随之更新的问题。</li>
+<li> 更新 Unicode 7.0 的 Unicode 块描述（需要 ICU 54 或更高版本）。</li>
+<li> 更新简体中文翻译。</li>
+<li> 其他小修改及问题修正。</li>
+</ol><h3>
 <a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
 
 <ol>
@@ -306,36 +308,6 @@
 <li>更新繁体中文翻译（Vincent_TW）。</li>
 <li>更新西班牙文翻译（Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;）。</li>
 <li>更新日文翻译（Tilt &lt;tiltstr[at]gmail.com&gt;）。</li>
-<li>其他小修改及问题修正。</li>
-</ol><h3>
-<a name="297" class="anchor" href="#297"><span class="octicon octicon-link"></span></a>2.9.7</h3>
-
-<ol>
-<li> 添加新编码“用于 ASCII 艺术的 CP437 变体”以更好支持 ASCII 艺术。</li>
-<li> 添加自动更新检测功能。</li>
-<li> 添加书签功能［主要由 Gospodin Gyurov（即 Gogo） &lt;ggurov[at]yahoo.com&gt; 开发］。</li>
-<li> 添加新命令：删除前一词/后一词（由 Gogo开发）。</li>
-<li> 添加搜索选项“循环查找”。</li>
-<li> 关于对话框添加致谢标签。</li>
-<li> 选项对话框添加杂项标签。</li>
-<li> 添加三击选择一行功能（主要由 cfreeer &lt;cfreeer[at]users.sf.net&gt; 开发）。</li>
-<li> 添加保存文件时更新语法高亮功能（主要由 cfreeer 开发）。</li>
-<li>添加 FreeBASIC 语法文件。</li>
-<li>添加编码分组。</li>
-<li>添加各历史纪录清除支持。</li>
-<li>添加十六进制区复制行为的更多选择并添加到选项对话框。</li>
-<li>添加俄文翻译（Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt; ）。</li>
-<li>改善 Windows 下最大化功能（由 Gogo 开发）。</li>
-<li>改善 Windows 下系统集成功能。</li>
-<li>改善字数统计信息的显示效果。</li>
-<li>更改选择下一词行为，同其他编辑器。</li>
-<li>更改查找/替换对话框通知消息到该对话框的底条。</li>
-<li>修正替换时不会循环查找的问题。</li>
-<li>修正中文版 Windows 下不能同时打开文件“a b”和“aÀb”的问题。</li>
-<li>修正当 debug 版 MadEdit/wxMEdit 失去鼠标捕获时断言错误的问题。</li>
-<li>修正当正在选择文本时从 wxMEdit/MadEdit 切出导致的错误行为问题。</li>
-<li>修正当文件从外部更新后点击编辑区导致错误行为的问题。</li>
-<li>更新简体中文、日文、西班牙文翻译。</li>
 <li>其他小修改及问题修正。</li>
 </ol><p>更多改动参见<a target="_blank" href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">改动记录</a>。</p>
 

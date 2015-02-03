@@ -47,11 +47,10 @@
             <a href="../zh_CN/helpl10n.html" style="float:right;">［改善不同地域的中文翻译］</a> 
           </strong></p>
 
-<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>預發佈版</h2>
 
-<p><strong>最新的預發佈版：2.9.8.3。</strong></p>
+<p><strong>最新的預發佈版：2.9.9.2。</strong></p>
 
 <table>
 <thead><tr>
@@ -63,25 +62,16 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3-win32-bin.7z">wxMEdit-2.9.8.3-win32-bin.7z</a></td>
-</tr>
-<tr>
-<td>FreeBSD 10</td>
-<td>i386</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-i386-icu53.txz">wxmedit-2.9.8.3-i386-icu53.txz</a></td>
-</tr>
-<tr>
-<td>FreeBSD 10</td>
-<td>amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-amd64-icu53.txz">wxmedit-2.9.8.3-amd64-icu53.txz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2-win32-bin.7z">wxMEdit-2.9.9.2-win32-bin.7z</a></td>
 </tr>
 <tr>
 <td>Other</td>
 <td>other</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3.tar.gz">wxMEdit-2.9.8.3.tar.gz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2.tar.gz">wxMEdit-2.9.9.2.tar.gz</a></td>
 </tr>
 </tbody>
 </table>
+<!--
 -->
 <h2>
 <a name="%E6%9C%80%E6%96%B0%E7%99%BC%E4%BD%88%E7%89%88" class="anchor" href="#%E6%9C%80%E6%96%B0%E7%99%BC%E4%BD%88%E7%89%88"><span class="octicon octicon-link"></span></a>最新發佈版</h2>
@@ -265,6 +255,18 @@
 <a name="%E6%9B%B4%E5%8B%95%E8%A8%98%E9%8C%84" class="anchor" href="#%E6%9B%B4%E5%8B%95%E8%A8%98%E9%8C%84"><span class="octicon octicon-link"></span></a>更動記錄</h2>
 
 <h3>
+<a name="2992" class="anchor" href="#2992"><span class="octicon octicon-link"></span></a>2.9.9.2</h3>
+
+<ol>
+<li> added new options to display/print bookmark independent of line number.</li>
+<li> improved bookmark appearance for displaying and printing.</li>
+<li> improved Tab and EOF mark pattern, make it easy to distinguish Tab mark from space mark.</li>
+<li> fixed that there are too few characters limited in a line with certain word wrap settings.</li>
+<li> fixed that width of list items in Syntax Highlighting Settings Dialog are not updated on resizing.</li>
+<li> updated Unicode block descriptions for Unicode 7.0 (require ICU 54 or higher).</li>
+<li> 更新簡體中文翻譯。</li>
+<li> 其它小修改及問題修正。</li>
+</ol><h3>
 <a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
 
 <ol>
@@ -306,36 +308,6 @@
 <li>更新繁體中文翻譯（Vincent_TW）。</li>
 <li>更新西班牙文翻譯（Carlos Sanchez &lt;carlos1994sanchez[at]gmail.com&gt;）。</li>
 <li>更新日文翻譯（Tilt &lt;tiltstr[at]gmail.com&gt;）。</li>
-<li>其它小修改及問題修正。</li>
-</ol><h3>
-<a name="297" class="anchor" href="#297"><span class="octicon octicon-link"></span></a>2.9.7</h3>
-
-<ol>
-<li> 增加新編碼「用於 ASCII 藝術的 CP437 變體」以更好支援 ASCII 藝術。</li>
-<li> 增加自動更新檢測功能。</li>
-<li> 增加書籤功能〔主要由 Gospodin Gyurov（即 Gogo） &lt;ggurov[at]yahoo.com&gt; 開發〕。</li>
-<li> 增加新命令：刪除前一字/後一字（由 Gogo開發）。</li>
-<li> 增加尋找選項「循環尋找」。</li>
-<li> 關於對話框增加致謝標籤。</li>
-<li> 選項對話框增加雜項標籤。</li>
-<li> 增加三點選擇一行功能（主要由 cfreeer &lt;cfreeer[at]users.sf.net&gt; 開發）。</li>
-<li> 增加儲存檔案時更新語法高亮度功能（主要由 cfreeer 開發）。</li>
-<li>增加 FreeBASIC 語法檔案。</li>
-<li>增加編碼分組。</li>
-<li>增加各歷史紀錄清除支援。</li>
-<li>增加十六進位元區複製行為的更多選擇並增加到選項對話框。</li>
-<li>增加俄文翻譯（Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;）。</li>
-<li>改善 Windows 下最大化功能（由 Gogo 開發）。</li>
-<li>改善 Windows 下系統整合功能。</li>
-<li>改善字數統計資訊的顯示效果。</li>
-<li>變更選擇下一字行為，同其它編輯器。</li>
-<li>變更尋找/取代對話框通知訊息到該對話框的下方。</li>
-<li>修正取代時不會循環尋找的問題。</li>
-<li>修正中文版 Windows 下不能同時開啟檔案「a b」和「aÀb」的問題。</li>
-<li>修正當 debug 版 MadEdit/wxMEdit 失去滑鼠取得時斷言錯誤的問題。</li>
-<li>修正當正在選擇文字時從 wxMEdit/MadEdit 切出導致的錯誤行為問題。</li>
-<li>修正當檔案從外部更新後單按編輯區導致錯誤行為的問題。</li>
-<li>更新簡體中文、日文、西班牙文翻譯。</li>
 <li>其它小修改及問題修正。</li>
 </ol><p>更多更動參考<a target="_blank" href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">更動記錄</a>。</p>
 

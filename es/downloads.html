@@ -46,11 +46,10 @@
             <a href="../ja_JP/downloads.html">日本語</a> 
           </strong></p>
 
-<!--
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>Version preliminar</h2>
 
-<p><strong>La versión preliminar más reciente es: 2.9.8.3 .</strong></p>
+<p><strong>La versión preliminar más reciente es: 2.9.9.2 .</strong></p>
 
 <table>
 <thead><tr>
@@ -62,25 +61,16 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3-win32-bin.7z">wxMEdit-2.9.8.3-win32-bin.7z</a></td>
-</tr>
-<tr>
-<td>FreeBSD 10</td>
-<td>i386</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-i386-icu53.txz">wxmedit-2.9.8.3-i386-icu53.txz</a></td>
-</tr>
-<tr>
-<td>FreeBSD 10</td>
-<td>amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxmedit-2.9.8.3-amd64-icu53.txz">wxmedit-2.9.8.3-amd64-icu53.txz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2-win32-bin.7z">wxMEdit-2.9.9.2-win32-bin.7z</a></td>
 </tr>
 <tr>
 <td>Otros</td>
 <td>Otros</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.8.3/wxMEdit-2.9.8.3.tar.gz">wxMEdit-2.9.8.3.tar.gz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2.tar.gz">wxMEdit-2.9.9.2.tar.gz</a></td>
 </tr>
 </tbody>
 </table>
+<!--
 -->
 <h2>
 <a name="ultimo-lanzamiento" class="anchor" href="#ultimo-lanzamiento"><span class="octicon octicon-link"></span></a>Ultimo Lanzamiento</h2>
@@ -264,6 +254,18 @@
 <a name="hitorial-de-cambios" class="anchor" href="#hitorial-de-cambios"><span class="octicon octicon-link"></span></a>Hitorial de cambios</h2>
 
 <h3>
+<a name="2992" class="anchor" href="#2992"><span class="octicon octicon-link"></span></a>2.9.9.2</h3>
+
+<ol>
+<li> added new options to display/print bookmark independent of line number.</li>
+<li> improved bookmark appearance for displaying and printing.</li>
+<li> improved Tab and EOF mark pattern, make it easy to distinguish Tab mark from space mark.</li>
+<li> fixed that there are too few characters limited in a line with certain word wrap settings.</li>
+<li> fixed that width of list items in Syntax Highlighting Settings Dialog are not updated on resizing.</li>
+<li> updated Unicode block descriptions for Unicode 7.0 (require ICU 54 or higher).</li>
+<li> actualizada traducción al Chino Simplificado.</li>
+<li> otros cambios menores y correcciones de errores.</li>
+</ol><h3>
 <a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
 
 <ol>
@@ -305,36 +307,6 @@
 <li>actualizada traducción al Chino Tradicional por Vincent_TW.</li>
 <li>actualizada traducción al Español por Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
 <li>actualizada traducción al Japonés por Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
-<li>otros cambios menores y correcciones de errores.</li>
-</ol><h3>
-<a name="297" class="anchor" href="#297"><span class="octicon octicon-link"></span></a>2.9.7</h3>
-
-<ol>
-<li> añadida nueva codificación "CP437 Variante para ASCII-Art" para mejor soporte ASCII-Art .</li>
-<li> añadido comprobar automáticamente si hay actualizaciones.</li>
-<li> añadido soporte de marcador [ principalmente por Gospodin Gyurov (alias Gogo) &lt;ggurov[at]yahoo.com&gt; ].</li>
-<li> añadido nuevos comandos: eliminar anterior/siguiente palabra (por Gogo).</li>
-<li> añadida opción de búsqueda "Envolver alrededor".</li>
-<li> añadida pestaña de Créditos en diálogo Acerca de.</li>
-<li> añadida pestaña Diverso en el diálogo Opciones.</li>
-<li> añadido seleccionar una línea con un triple clic (principalmente por cfreeer &lt;cfreeer[at]users.sf.net&gt;).</li>
-<li> añadido actualizar resaltado de sintaxis al guardar archivo (principalmente por cfreeer).</li>
-<li>añadido archivo de sintaxis FreeBASIC.</li>
-<li>añadido agrupación de codificaciones.</li>
-<li>añadido soporte para purgar historiales.</li>
-<li>añadida más opciones para copiar en area hexadecimal y en Diálogo Opciones.</li>
-<li>añadida traducción al ruso por Shamil Bikineyev &lt;shamilbi[at]gmail.com&gt;.</li>
-<li>mejorado el comportamiento maximizado bajo Windows (por Gogo).</li>
-<li>mejorada la integración del sistema bajo Windows.</li>
-<li>mejorado efecto de mostrar información de cantidad de palabras.</li>
-<li>cambio de comportamiento de la selección de la próxima palabra como otros editores.</li>
-<li>cambio de mensajes de notificación de Buscar/Reemplazar muestra diálogo en la barra inferior del cuadro de diálogo.</li>
-<li>corregido no envolver siempre al reemplazar.</li>
-<li>corregido que los archivos "ab" y "aÀb" no se podian abrir simultáneamente en Edición China de Windows.</li>
-<li>corregido afirmación fallaba con la versión de depuración de MadEdit/wxMEdit cuando pierde la captura del mouse.</li>
-<li>corregido comportamiento incorrecto cuando se cambia desde wxMEdit/MadEdit sobre la selección de texto.</li>
-<li>corregido comportamiento incorrecto cuando se actualiza un archivo abierto y se hace clic en el área de edición.</li>
-<li>actualizadas las traducciones al Chino Simplificado, Japonés, Español.</li>
 <li>otros cambios menores y correcciones de errores.</li>
 </ol><p>Ver <a target="_blank" href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">ChangeLog</a> para más cambios.</p>
 
