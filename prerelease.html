@@ -6,10 +6,13 @@
     <script type="text/javascript">
       if (location.search) {
         var s = location.search;
-        if (s.match(/^\?es_[A-Z][A-Z]/))
-          s = '?es';
-        var l10n = {'?zh_CN':'zh_CN', '?zh_SG':'zh_CN', '?zh':'zh_CN', '?zh_TW':'zh_TW', '?zh_HK':'zh_TW', 
-                    '?zh_MO':'zh_TW', '?ja_JP':'ja_JP', '?ja':'ja_JP', '?es':'es', }[s] || '';
+        var l = s.substr(1);
+        if (l.substr(0, 3) == 'hl=')
+          l = l.substr(3);
+        if (l.match(/^es_[A-Z][A-Z]/))
+          l = 'es';
+        var l10n = {'zh_CN':'zh_CN', 'zh_SG':'zh_CN', 'zh':'zh_CN', 'zh_TW':'zh_TW', 'zh_HK':'zh_TW', 
+                    'zh_MO':'zh_TW', 'ja_JP':'ja_JP', 'ja':'ja_JP', 'es':'es', }[l] || '';
         location = l10n + "/downloads.html#prerelease";
       }
       else {

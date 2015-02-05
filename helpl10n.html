@@ -7,10 +7,13 @@
     <script type="text/javascript">
       if (location.search) {
         var s = location.search;
-        if (s.match(/^\?es_[A-Z][A-Z]/))
-          s = '?es';
-        var l10n = {'?zh_CN':'zh_CN', '?zh_SG':'zh_CN', '?zh':'zh_CN', '?zh_TW':'zh_CN', 
-                    '?zh_HK':'zh_CN', '?ja_JP':'', '?ja':'', '?es':'', }[s] || '';
+        var l = s.substr(1);
+        if (l.substr(0, 3) == 'hl=')
+          l = l.substr(3);
+        if (l.match(/^es_[A-Z][A-Z]/))
+          l = 'es';
+        var l10n = {'zh_CN':'zh_CN', 'zh_SG':'zh_CN', 'zh':'zh_CN', 'zh_TW':'zh_CN', 'zh_HK':'zh_CN', 
+                    'zh_MO':'zh_CN', 'ja_JP':'', 'ja':'', 'es':'', }[l] || '';
         location = l10n + location.pathname + location.hash;
       }
     </script>  
